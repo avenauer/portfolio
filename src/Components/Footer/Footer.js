@@ -1,0 +1,43 @@
+import React, {Component} from "react";
+import {ContactMeStyled, FooterContentStyled, FooterStyled} from "./components";
+import {WiderSpan} from "../maincomponents";
+import InstagramIcon from "../../Assets/instagram.svg";
+
+class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isToggleOn: false };
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
+
+  render() {
+    return (
+      <FooterStyled handler={this.state.isToggleOn}>
+        <ContactMeStyled onClick={this.handleClick}>Contact me</ContactMeStyled>
+        <FooterContentStyled>
+          <a
+            href="https://instagram.com/_avnr"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src={InstagramIcon} alt="" />
+          </a>
+          <WiderSpan>avnr.contactme@gmail.com</WiderSpan>
+          <WiderSpan style={{ whiteSpace: "nowrap" }}>
+            {"</> by avnr"}
+          </WiderSpan>
+        </FooterContentStyled>
+      </FooterStyled>
+    );
+  }
+}
+
+export default Footer;
