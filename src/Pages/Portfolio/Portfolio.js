@@ -13,7 +13,7 @@ import { images } from "./works";
 
 const AnimContainer = posed.div({
   enter: { x: 0, opacity: 1, delay: 300 },
-  exit: { x: -350, opacity: 0, delay: 150 }
+  exit: { x: -1350, opacity: 0, delay: 150 }
 });
 
 const stylesasd = {

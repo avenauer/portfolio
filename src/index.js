@@ -2,6 +2,7 @@ import React from "react";
 import {
   createHistory,
   Location,
+  LocationProvider,
   Router
 } from "@reach/router";
 import posed, { PoseGroup } from "react-pose";
@@ -24,7 +25,7 @@ let source = createHashSource();
 let history = createHistory(source);
 
 const PosedRouter = ({ children }) => (
-  <Location history={history}>
+  <Location>
     {({ location }) => (
       <PoseGroup>
         <RouteContainer key={location.key}>
@@ -36,7 +37,7 @@ const PosedRouter = ({ children }) => (
 );
 
 const App = () => (
-  <>
+  <LocationProvider history={history}>
     <NavBar />
     <PosedRouter>
       <Portfolio path="/portfolio" />
@@ -45,7 +46,7 @@ const App = () => (
     </PosedRouter>
     <NavMain />
     <Footer />
-  </>
+  </LocationProvider>
 );
 
 ReactDOM.render(<App />, document.getElementById("root"));
