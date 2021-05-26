@@ -21,7 +21,7 @@ export const MyWorksSpanStyled = styled(TitleOneSpan)`
   position: relative;
 
   &:after {
-    content: "2018-2020";
+    content: "2018-2021";
     position: absolute;
     bottom: -1.75em;
     left: 0;

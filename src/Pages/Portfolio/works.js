@@ -5,33 +5,33 @@ import Platform from "../../Assets/portfolio/platform2.png";
 import MB from "../../Assets/portfolio/MB.png";
 import Silverdiy from "../../Assets/portfolio/silverdiy.png";
 
-const CartuneImg = {
-  alt: "Glenorchy lagoon, New Zealand by Robert Pearce",
+/*const CartuneImg = {
+  alt: "",
   src: Cartune
-};
+};*/
 const BoombitImg = {
-  alt: "Port Waikato, Tuakau, Auckland, New Zealand by Petr Vysohlid",
+  alt: "",
   src: Boombit
 };
 const LuxcraftImg = {
-  alt: "Port Waikato, Tuakau, Auckland, New Zealand by Petr Vysohlid",
+  alt: "",
   src: Luxcraft
 };
 const PlatformImg = {
-  alt: "Port Waikato, Tuakau, Auckland, New Zealand by Petr Vysohlid",
+  alt: "",
   src: Platform
 };
 const MBImg = {
-  alt: "Port Waikato, Tuakau, Auckland, New Zealand by Petr Vysohlid",
+  alt: "",
   src: MB
 };
 const SilverdiyImg = {
-  alt: "Port Waikato, Tuakau, Auckland, New Zealand by Petr Vysohlid",
+  alt: "",
   src: Silverdiy
 };
 
 export const images = [
-  CartuneImg,
+  //CartuneImg,
   BoombitImg,
   PlatformImg,
   LuxcraftImg,

@@ -16,6 +16,17 @@ const AnimContainer = posed.div({
   exit: { x: -350, opacity: 0, delay: 150 }
 });
 
+const stylesasd = {
+    backgroundColor: "#c2c2c2",
+    //backgroundImage: `url(${img.src})`,
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+    height: "0",
+    paddingBottom: "75%",
+    width: "calc(100%)"
+};
+
 const Portfolio = () => {
   return (
     <AnimContainer>
@@ -30,16 +41,7 @@ const Portfolio = () => {
                     <div
                       aria-label={img.alt}
                       role="img"
-                      style={{
-                        backgroundColor: "#c2c2c2",
-                        backgroundImage: `url(${img.src})`,
-                        backgroundPosition: "center center",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "contain",
-                        height: "0",
-                        paddingBottom: "75%",
-                        width: "calc(100%)"
-                      }}
+                      style={stylesasd}
                     />
                   </ZoomImage>
                 </div>
