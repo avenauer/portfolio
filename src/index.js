@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  createHistory,
-  Location,
-  LocationProvider,
-  Router
-} from "@reach/router";
+import {createHistory, Location, LocationProvider, Router} from "@reach/router";
 import posed, { PoseGroup } from "react-pose";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import "./index.css";
